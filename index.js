@@ -1,4 +1,3 @@
-var angular = require('angular');
 var map = null;
 var slice = Array.prototype.slice;
 var hasOwnProperty = Object.hasOwnProperty;
