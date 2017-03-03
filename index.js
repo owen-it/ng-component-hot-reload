@@ -5,15 +5,13 @@ var getOwnPropertyNames = Object.getOwnPropertyNames;
 var keys = Object.keys;
 var kebabCase  = require('./utils').kebabCase;
 
-exports.install = function (angular){
+exports.wrapping = function (angular){
     map = angular.__NG_HOT_MAP || Object.create(null) 
 }
 
 exports.register = function(id, component)
 {
-    map[id] = {
-        ctro: component
-    }
+    map[id] = { component }
 }
 
 exports.update = function(id, component)
